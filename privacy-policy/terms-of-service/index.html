@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="4SGamz Terms of Service">
+    <meta name="robots" content="index,follow">
+
+    <title>Terms of Service | 4SGamz</title>
+
+    <style>
+        :root {
+            --bg: #07080b;
+            --bg2: #0b0d12;
+            --panel: #111319;
+            --panel2: #171a22;
+
+            --text: #f6f7fb;
+            --muted: #b0b4bf;
+            --muted2: #888e9c;
+
+            --accent: #927cff;
+            --accent2: #5f8dff;
+
+            --border: rgba(255, 255, 255, 0.09);
+            --borderStrong: rgba(146, 124, 255, 0.30);
+
+            --maxWidth: 900px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            color-scheme: dark;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            color: var(--text);
+
+            font-family:
+                Inter,
+                ui-sans-serif,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 15% 8%,
+                    rgba(146, 124, 255, 0.15),
+                    transparent 30rem
+                ),
+                radial-gradient(
+                    circle at 90% 30%,
+                    rgba(95, 141, 255, 0.10),
+                    transparent 30rem
+                ),
+                linear-gradient(
+                    180deg,
+                    #090a0f 0%,
+                    var(--bg) 40%,
+                    #08090c 100%
+                );
+
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: "";
+
+            position: fixed;
+            inset: 0;
+
+            pointer-events: none;
+            z-index: -1;
+
+            opacity: 0.16;
+
+            background-image:
+                linear-gradient(
+                    rgba(255,255,255,.018) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,.018) 1px,
+                    transparent 1px
+                );
+
+            background-size: 42px 42px;
+        }
+
+        a {
+            color: #b9adff;
+            text-decoration: none;
+
+            overflow-wrap: anywhere;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .page {
+            width: min(
+                var(--maxWidth),
+                calc(100% - 34px)
+            );
+
+            margin: 0 auto;
+            padding: 58px 0 90px;
+        }
+
+        .policy {
+            position: relative;
+
+            overflow: hidden;
+
+            padding:
+                clamp(24px, 5vw, 54px);
+
+            border: 1px solid var(--border);
+
+            border-radius: 28px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(146, 124, 255, 0.06),
+                    rgba(17, 19, 25, 0.97) 25%,
+                    rgba(12, 14, 19, 0.98)
+                );
+
+            box-shadow:
+                0 30px 90px rgba(0, 0, 0, 0.35);
+        }
+
+        .policy::before {
+            content: "";
+
+            position: absolute;
+
+            width: 460px;
+            height: 460px;
+
+            right: -220px;
+            top: -220px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(146, 124, 255, 0.15),
+                    transparent 68%
+                );
+
+            pointer-events: none;
+        }
+
+        h1,
+        h2,
+        h3 {
+            position: relative;
+
+            margin-top: 0;
+
+            color: var(--text);
+
+            line-height: 1.2;
+        }
+
+        h1 {
+            margin-bottom: 14px;
+
+            font-size:
+                clamp(34px, 7vw, 56px);
+
+            letter-spacing: -1.8px;
+        }
+
+        h1 + h1 {
+            margin-top: 12px;
+        }
+
+        h2 {
+            margin-top: 48px;
+            margin-bottom: 15px;
+
+            padding-bottom: 11px;
+
+            border-bottom:
+                1px solid var(--border);
+
+            font-size:
+                clamp(22px, 4vw, 29px);
+
+            letter-spacing: -0.7px;
+        }
+
+        h2::before {
+            content: "";
+
+            display: inline-block;
+
+            width: 8px;
+            height: 8px;
+
+            margin-right: 11px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--accent),
+                    var(--accent2)
+                );
+
+            box-shadow:
+                0 0 0 5px
+                rgba(146, 124, 255, 0.08);
+
+            vertical-align: middle;
+        }
+
+        h3 {
+            margin-top: 32px;
+            margin-bottom: 12px;
+
+            font-size: 19px;
+        }
+
+        p {
+            margin: 13px 0;
+
+            color: var(--muted);
+        }
+
+        strong {
+            color: #e9eaf0;
+            font-weight: 650;
+        }
+
+        ul {
+            margin: 16px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 8px 0;
+            padding-left: 5px;
+
+            color: var(--muted);
+        }
+
+        li::marker {
+            color: var(--accent);
+        }
+
+        .updated {
+            display: inline-block;
+
+            margin: 5px 0 16px;
+
+            padding: 8px 12px;
+
+            border:
+                1px solid rgba(146,124,255,.20);
+
+            border-radius: 999px;
+
+            color: #cbc4f8;
+
+            background:
+                rgba(146,124,255,.08);
+
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .intro {
+            margin-top: 26px;
+
+            padding: 20px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            background:
+                rgba(255,255,255,.025);
+        }
+
+        .contact-box {
+            margin-top: 20px;
+
+            padding: 20px;
+
+            border:
+                1px solid var(--borderStrong);
+
+            border-radius: 18px;
+
+            background:
+                rgba(146,124,255,.055);
+        }
+
+        .contact-box a {
+            display: block;
+
+            width: fit-content;
+
+            margin-top: 7px;
+
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+
+            .page {
+                width:
+                    min(
+                        100% - 20px,
+                        var(--maxWidth)
+                    );
+
+                padding:
+                    18px 0 50px;
+            }
+
+            .policy {
+                border-radius: 20px;
+            }
+
+            h2 {
+                margin-top: 38px;
+            }
+
+            .intro,
+            .contact-box {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="page">
+
+<article class="policy">
+
+<h1>4SGamz – Terms of Service</h1>
+<div class="updated">Last Updated: [Publication Date]</div>
+<div class="intro">
+  <p><strong>Developer/Publisher:</strong> 4SGamz</p>
+  <p><strong>Contact Email:</strong> <a href="mailto:sayed.ahmed6662@gmail.com">sayed.ahmed6662@gmail.com</a>, <a href="mailto:samir.oreo1@gmail.com">samir.oreo1@gmail.com</a></p>
+  <p><strong>Official Website:</strong> <a href="https://www.4sgamz.com/">https://www.4sgamz.com/</a></p>
+</div>
+
+<h2>1. Introduction and Acceptance</h2>
+<p>Welcome to 4SGamz.</p>
+<p>These Terms of Service ("Terms") govern your access to and use of mobile games, applications, websites, and related services published or operated by 4SGamz (collectively, the "Services").</p>
+<p>These Terms apply to all games published by 4SGamz, including existing and future titles, unless a particular game provides additional or different terms.</p>
+<p>By downloading, accessing, or using our Services, you agree to these Terms to the extent permitted by applicable law. If you do not agree, please discontinue using the Services.</p>
+<p>If you are below the legal age to enter into a contract in your country, a parent or legal guardian should review these Terms and provide any consent required by law.</p>
+<h2>2. License to Use Our Games</h2>
+<p>4SGamz grants you a limited, non-exclusive, non-transferable license to download, install, and use our games for personal, non-commercial entertainment in accordance with these Terms and applicable app-store rules.</p>
+<p>You do not acquire ownership of the games, their source code, graphics, audio, characters, gameplay assets, or other protected content.</p>
+<p>You may not redistribute, sell, or commercially exploit our games or assets without permission, except where applicable law expressly permits such activity.</p>
+<h2>3. Fair Use and Player Conduct</h2>
+<p>When using our Services, you agree not to:</p>
+<ul>
+<li>Use cheats, exploits, or unauthorized modifications to unfairly manipulate online scores, rankings, rewards, or other players' experiences.</li>
+<li>Attempt to gain unauthorized access to game systems, servers, or other users' accounts.</li>
+<li>Distribute unauthorized or pirated copies of our games.</li>
+<li>Interfere with the normal operation or security of our Services.</li>
+<li>Use our Services for unlawful activities.</li>
+</ul>
+<p>We may take proportionate action against serious violations, including restricting affected online features, subject to applicable law.</p>
+<h2>4. Virtual Currency and Game Items</h2>
+<p>Some 4SGamz games include virtual money, coins, gems, credits, vehicles, equipment, decorations, upgrades, or other digital items.</p>
+<p>Unless expressly stated otherwise:</p>
+<ul>
+<li>Virtual items are intended only for use within the relevant game.</li>
+<li>Virtual currency is not real money and has no cash redemption value.</li>
+<li>Virtual items cannot be exchanged for real-world currency through 4SGamz.</li>
+<li>Items earned through gameplay are subject to the progression and balancing rules of the relevant game.</li>
+</ul>
+<p>Paid digital items provide the access or functionality described at the time of purchase. Any changes affecting paid content remain subject to applicable consumer rights.</p>
+<h2>5. Purchases and Payments</h2>
+<p>Some Services offer paid downloads or optional in-app purchases.</p>
+<p>Where purchases are processed through Google Play, payment processing, applicable transaction rules, and payment methods are managed through Google Play.</p>
+<p>Prices and the content provided by each purchase are displayed before purchase confirmation.</p>
+<p>If you experience a purchase-related problem, please contact us with the relevant game name and transaction details. Do not send complete payment card information.</p>
+<p>Refunds and other remedies are handled in accordance with applicable consumer law, Google Play policies, and the circumstances of the purchase.</p>
+<p>Google Play's refund information is available at:
+<a href="https://support.google.com/googleplay/answer/15574908">https://support.google.com/googleplay/answer/15574908</a></p>
+<p>Nothing in these Terms excludes consumer rights that cannot legally be excluded.</p>
+<h2>6. Premium Features and Subscriptions</h2>
+<p>Certain games may offer premium content, memberships, or subscription features.</p>
+<p>If a recurring subscription is offered, the applicable price, billing period, included benefits, and renewal conditions will be disclosed before purchase.</p>
+<p>Subscriptions processed through Google Play can be managed or cancelled through the user's Google Play subscription settings.</p>
+<p>Uninstalling a game does not automatically cancel an active subscription.</p>
+<p>Unless otherwise specified in the purchase offer, cancellation normally prevents future renewals while allowing access to paid benefits until the end of the current billing period, subject to applicable law and store rules.</p>
+<h2>7. Advertisements and Rewarded Content</h2>
+<p>Some 4SGamz games display advertisements, including banner advertisements, interstitial advertisements, and optional rewarded advertisements.</p>
+<p>Rewarded advertisements may allow players to receive optional in-game benefits after satisfying the conditions shown in the game.</p>
+<p>Advertisement availability can depend on internet connectivity, advertising-provider availability, technical conditions, and applicable privacy settings.</p>
+<p>If a game offers a "Remove Ads" purchase, the specific advertisements removed will be described in the purchase offer. Optional rewarded advertisements may remain available where clearly disclosed.</p>
+<p>Some advertisements are provided by third-party advertising networks. Their data practices are described in our Privacy Policy and their own applicable policies.</p>
+<h2>8. Game Progress, Saving, and Cloud Features</h2>
+<p>Our games may use local device storage, supported platform services, or optional online systems to save player progress and settings.</p>
+<p>Saving and synchronization features may differ between games.</p>
+<p>We take reasonable steps to support the reliability of these features. However, technical failures, corrupted files, device replacement, uninstalling a game, or unsupported synchronization may result in lost progress.</p>
+<p>Players should use available backup or account synchronization features where supported.</p>
+<p>If you experience problems with game progress, you may contact us for assistance. We will review the issue and provide available support or remedies as required by applicable law.</p>
+<h2>9. Online Features and Leaderboards</h2>
+<p>Some games may include online features, achievements, cloud synchronization, leaderboards, or connections to third-party gaming services.</p>
+<p>These features may require an internet connection and may be subject to additional platform rules.</p>
+<p>We may investigate cheating, unauthorized manipulation, or security threats affecting online services and take reasonable corrective action.</p>
+<p>We cannot guarantee uninterrupted access to services operated by third parties.</p>
+<h2>10. Children and Age-Appropriate Use</h2>
+<p>4SGamz publishes games intended for different audiences.</p>
+<p>Parents and guardians should review each game's age rating, available purchases, advertising features, and content before allowing a child to play.</p>
+<p>Where required, we apply additional privacy and advertising protections for children and younger users.</p>
+<p>Children's information and applicable privacy protections are described in our Privacy Policy.</p>
+<h2>11. Intellectual Property</h2>
+<p>Unless otherwise stated, the intellectual property rights in our games and original content belong to 4SGamz or the relevant rights holders.</p>
+<p>This includes original game designs, software, artwork, music, interface elements, and other protected content.</p>
+<p>Third-party trademarks, product names, and intellectual property remain the property of their respective owners.</p>
+<p>Nothing in these Terms grants permission to use 4SGamz intellectual property commercially without authorization.</p>
+<h2>12. Updates and Service Availability</h2>
+<p>We may release updates to improve game performance, introduce content, correct bugs, address security issues, or maintain compatibility with devices and platform requirements.</p>
+<p>Game features and supported devices may change over time for legitimate technical or operational reasons.</p>
+<p>If we make a material change affecting purchased content or ongoing paid services, we will respect applicable notification, cancellation, refund, and other consumer protection requirements.</p>
+<p>We may discontinue a game or feature when reasonably necessary, subject to existing contractual obligations and applicable law.</p>
+<h2>13. Privacy and Third-Party Services</h2>
+<p>Your privacy is important to us.</p>
+<p>Information about the collection, processing, sharing, retention, and protection of personal data is available in our separate Privacy Policy:</p>
+<p><a href="https://www.4sgamz.com/privacy-policy/">https://www.4sgamz.com/privacy-policy/</a></p>
+<p>Our games may integrate supported third-party services for functions such as advertising, payments, achievements, analytics, and online functionality.</p>
+<p>These providers may have separate terms and privacy policies.</p>
+<h2>14. Disclaimer and Limitation of Liability</h2>
+<p>We aim to provide enjoyable, functional, and reliable games.</p>
+<p>However, software may occasionally contain bugs, experience technical interruptions, or require maintenance.</p>
+<p>To the extent permitted by applicable law, we do not guarantee that the Services will always be uninterrupted or free from every technical error.</p>
+<p>Any limitation of our liability applies only to the extent legally permitted.</p>
+<p>Nothing in these Terms excludes or restricts liability or consumer remedies that cannot lawfully be excluded or restricted, including applicable rights relating to defective digital content.</p>
+<h2>15. Suspension and Termination</h2>
+<p>Players may stop using our games at any time.</p>
+<p>Where a user seriously violates these Terms or threatens the security or operation of a Service, we may restrict access to affected features when reasonably necessary.</p>
+<p>Any action involving paid content will be handled consistently with applicable consumer protection laws.</p>
+<p>For questions about restrictions or access problems, contact our support email.</p>
+<h2>16. Changes to These Terms</h2>
+<p>We may revise these Terms when necessary to reflect changes in our Services, technology, legal requirements, or business practices.</p>
+<p>The latest version will be published on our website with an updated revision date.</p>
+<p>Where required by law, we will provide appropriate notice and obtain any necessary consent before material changes become binding.</p>
+<p>Changes will not remove rights already protected under applicable law.</p>
+<h2>17. Consumer Rights and Disputes</h2>
+<p>If you have a complaint or dispute relating to a 4SGamz game, please contact us so we can try to resolve it.</p>
+<p>These Terms do not limit mandatory consumer protections available under the laws that apply to you, including applicable rights to remedies for digital content.</p>
+<p>Any dispute will be handled in accordance with applicable law and the jurisdictional rights available to the parties.</p>
+<h2>18. Contact Information</h2><div class="contact-box"><p>If you have questions, suggestions, purchase concerns, or complaints regarding these Terms or our games, contact:</p><p><strong>4SGamz</strong></p>
+<p><strong>Email:</strong></p>
+<a href="mailto:sayed.ahmed6662@gmail.com"><strong>sayed.ahmed6662@gmail.com</strong></a>
+<a href="mailto:samir.oreo1@gmail.com"><strong>samir.oreo1@gmail.com</strong></a>
+<p><strong>Website:</strong> <a href="https://www.4sgamz.com/">https://www.4sgamz.com/</a></p><p>Additional developer and trader contact details, where required, are available through our official app-store listings.</p></div>
+
+
+
+<hr/>
+<p>© 4SGamz. All rights reserved.</p>
+
+</article>
+
+</main>
+
+</body>
+</html>
